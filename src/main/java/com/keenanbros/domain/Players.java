@@ -22,4 +22,8 @@ public class Players {
 		this.numberOfPlayers = numberOfPlayers;
 	}
 
+	public void takeTurn() {
+		// TODO Auto-generated method stub
+	}
+
 }

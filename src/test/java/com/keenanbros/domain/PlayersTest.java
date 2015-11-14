@@ -20,4 +20,13 @@ public class PlayersTest {
 		
 		assertThat(players.getCurrentPlayer(), is(1));
 	}
+
+	@Test
+	public void takeTurTest() {
+		Players players = new Players();
+
+		assertThat(players.getCurrentPlayer(), is(1));
+		players.takeTurn();
+		assertThat(players.getCurrentPlayer(), is(2));
+	}
 }
