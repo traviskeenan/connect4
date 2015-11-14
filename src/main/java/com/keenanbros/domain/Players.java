@@ -6,6 +6,7 @@ public class Players {
 	int currentPlayer;
 
 	public int getCurrentPlayer() {
+		currentPlayer = 1;
 		return currentPlayer;
 	}
 
