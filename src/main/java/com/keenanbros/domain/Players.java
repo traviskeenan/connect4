@@ -3,10 +3,10 @@ package com.keenanbros.domain;
 public class Players {
 	int numberOfPlayers = 2;
 
-	int currentPlayer;
+	int currentPlayer = 1;
 
 	public int getCurrentPlayer() {
-		currentPlayer = 1;
+
 		return currentPlayer;
 	}
 
@@ -23,7 +23,8 @@ public class Players {
 	}
 
 	public void takeTurn() {
-		// TODO Auto-generated method stub
+		currentPlayer = 2;
+
 	}
 
 }
