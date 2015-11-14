@@ -22,11 +22,23 @@ public class PlayersTest {
 	}
 
 	@Test
-	public void takeTurTest() {
+	public void takeTurnTest() {
 		Players players = new Players();
 
 		assertThat(players.getCurrentPlayer(), is(1));
 		players.takeTurn();
 		assertThat(players.getCurrentPlayer(), is(2));
 	}
+
+	@Test
+	public void takeTwoTurnsTest() {
+		Players players = new Players();
+
+		assertThat(players.getCurrentPlayer(), is(1));
+		players.takeTurn();
+		assertThat(players.getCurrentPlayer(), is(2));
+		players.takeTurn();
+		assertThat(players.getCurrentPlayer(), is(1));
+	}
+	
 }
