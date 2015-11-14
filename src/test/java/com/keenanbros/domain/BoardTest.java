@@ -11,7 +11,7 @@ public class BoardTest {
 		Board board = new Board();
 		int positionOfDropped = board.drop(4, 1);
 		
-		assertSame(positionOfDropped, 1);
+		assertSame(1, positionOfDropped);
 	}
 
 }
