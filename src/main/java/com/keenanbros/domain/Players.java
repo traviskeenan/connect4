@@ -1,7 +1,7 @@
 package com.keenanbros.domain;
 
 public class Players {
-	int numberOfPlayers;
+	int numberOfPlayers = 2;
 
 	public int getNumberOfPlayers() {
 		return numberOfPlayers;
