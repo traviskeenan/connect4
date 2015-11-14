@@ -1,12 +1,11 @@
 package com.keenanbros.domain;
 
 public class Players {
-    int numberOfPlayers = 2;
+    private int numberOfPlayers = 2;
 
-    int currentPlayer = 1;
+    private int currentPlayer = 1;
 
     public int getCurrentPlayer() {
-
         return currentPlayer;
     }
 
@@ -28,7 +27,5 @@ public class Players {
         } else {
             currentPlayer = 1;
         }
-
     }
-
 }
